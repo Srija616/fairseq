@@ -42,7 +42,7 @@ jobs:
         python -m pip install iopath transformers pyarrow
         python -m pip install git+https://github.com/facebookresearch/fairscale.git@main
         python -m pip install pytest
-        python -m pip install pygit2
+        python -m pip install pygit2 pgzip
         
     - name: Install xformers for Macos
       if: matrix.platform == 'macos-latest'
